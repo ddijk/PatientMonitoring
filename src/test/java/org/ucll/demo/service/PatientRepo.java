@@ -13,18 +13,12 @@ public class PatientRepo {
 
     private Map<Long, Patient> patients = new HashMap<>();
 
-    private PatientRepo() {
-
-
-
-
-
-
-    }
+    private PatientRepo() { }
 
     public static PatientRepo getInstance() {
         return repo;
     }
+
     public  Patient getPatient(long socSecNr) {
 
         return patients.get(socSecNr);

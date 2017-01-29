@@ -47,8 +47,7 @@ public class Patient {
     }
 
     public Measure getLatestMeasure() {
-        Measure latestMeasure = measures.values().stream().max(Comparator.comparing(Measure::getMeetDatum)).orElse(null);
-        return latestMeasure;
+        return measures.values().stream().max(Comparator.comparing(Measure::getMeetDatum)).orElse(null);
     }
 
     public LocalDate getBirthDate() {
