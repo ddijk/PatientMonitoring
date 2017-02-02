@@ -23,3 +23,4 @@ Feature: Show patient details
     Then the length 180, weight 80000, and date of the examination "2000-04-17“ are given
     And the patient has 2 measurements
     And the calculated bmi "24.69" is based on these data
+
