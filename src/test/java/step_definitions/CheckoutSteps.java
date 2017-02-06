@@ -35,4 +35,6 @@ public class CheckoutSteps {
       assertEquals(expectedResult, total);
     }
 
+
+
 }
