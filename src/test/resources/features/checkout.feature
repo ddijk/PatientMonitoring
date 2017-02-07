@@ -10,6 +10,7 @@ Feature: Checkout
       | 1     | 40    |
       | 2     | 80    |
 
+  @Important
   Scenario: Two bananas scanned separately
     Given the price of a "banana" is 40c
     When I checkout 1 "banana"
