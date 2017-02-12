@@ -1,4 +1,4 @@
-Feature: Cycling disciplines
+Feature: Register for Cycling Race
 
   Scenario: Criterium Dick
 

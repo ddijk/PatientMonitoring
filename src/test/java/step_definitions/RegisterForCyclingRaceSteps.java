@@ -13,7 +13,7 @@ import static org.junit.Assert.assertTrue;
 /**
  * Created by dickdijk on 07/02/2017.
  */
-public class CyclingSteps {
+public class RegisterForCyclingRaceSteps {
 
     List<String> startList = new ArrayList<>();
 
