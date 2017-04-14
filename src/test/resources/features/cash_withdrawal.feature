@@ -13,5 +13,5 @@ Feature: Cash withdrawal
     And Ik heb ook nog $0 erbij gedaan
     When I request $20
     Then $20 should be dispensed.
-    And My Account should have $800
+    And My Account should have $80
 
