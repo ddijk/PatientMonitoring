@@ -47,12 +47,14 @@
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.12</version>
+            <scope>test</scope>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
             <version>3.3.1</version>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 
@@ -67,6 +69,28 @@
                     <source>1.8</source>
                     <target>1.8</target>
                 </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>1.1.1</version>
+                <executions>
+                    <execution>
+                        <phase>test</phase>
+                        <goals>
+                            <goal>java</goal>
+                        </goals>
+                        <configuration>
+                            <mainClass>cucumber.api.cli.Main</mainClass>
+                            <classpathScope>test</classpathScope>
+                            <arguments>
+                                <argument>--glue</argument>
+                                <argument>org.ucll.demo.service</argument>
+                                <argument>src/test/resources/org/ucll/demo/service/show_patient_details.feature</argument>
+                            </arguments>
+                        </configuration>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
 
